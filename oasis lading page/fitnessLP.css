@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Century;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+
+}
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;*/
+header{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.3),rgba(0,0,0,0.2)),url(fit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+
+ul{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    min-height: 680px;
+    margin-left: 400px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+ul li{
+    display: inline-block;
+
+}
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 4px 12px;
+    border: 2px solid transparent;
+    transition: 0.5 ease;
+    border-radius: 2px;
+    
+
+}
+
+ul li a:hover{
+   border-bottom: 3px solid rgb(227, 77, 130);
+   transition: 0.4s linear;
+}
+
+.logo img{
+    float: left;
+    width: 515px;
+    height:490px;
+    margin-bottom: 105%;
+    padding-right:2px;
+    display: flex;
+    justify-content: flex-start;
+    
+
+}
+/*
+.logo1 img{
+    float: left;
+    width: 200px;
+    height: 300px;
+    margin-bottom: 270%;
+    display: inline;
+    margin-left: 2px;
+    padding-left: 10px;
+
+}
+*/
+
+.desc{
+    max-width: 600px;
+    color: aliceblue;
+    position: absolute;
+    top: 54%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    
+
+}
+
+.desc h1{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+   
+.desc span{
+    color: rgb(17, 16, 16);
+    font-size: large;
+} 
+
+input[type=button] {
+    background:linear-gradient(45deg,#7a0f5b,#e51542);
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    font-style: normal;
+    border-radius: 6px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    margin-top: 6%;
+    margin-left: 10%;
+}
+
+.sub-menu{
+    display: none;
+    top: 4%;
+    position: relative;
+}
+
+
+.sub-menu ul{
+    position:absolute;
+}
+
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: aliceblue;
+    /*margin-top: 40px;*/
+    margin-left: 3px;
+}
+
+.main ul li:hover .sub-menu ul{
+    display: block;
+    margin: 33px;
+}
+
+.main ul li:hover .sub-menu ul li{
+    width: 80px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0px;
+}
+
+
+
+
+.bg{
+    background: linear-gradient(#336cd4,#618bc6);
+}
+
+
+
+
+
+.slider{
+    position: relative;
+    width: 60%;
+    overflow:hidden;
+    align-items: center;
+    justify-content:  center;
+    margin-left: 21%;
+    
+    
+}
+
+.images{
+    display: flex;
+    width: 100%;
+   
+    
+
+}
+.images img{
+    height: 550px;
+    width: 890px;
+    object-fit: cover;
+    transform: 1.3s;
+    transition: all 0.15s ease; 
+   
+}
+
+.images input{
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    color: #000;
+}
+
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    margin: 5px;
+    cursor: pointer;
+    transition:all 0.15s ease ;
+}
+.dots label:hover{background: #fff;}
+#img1:checked ~ .image1{
+    margin-left: 0;
+}
+#img2:checked ~ .image2{
+    margin-left: -100%;
+}
+#img3:checked ~ .image3{
+    margin-left: -200%;
+}
+#img4:checked ~ .image4{
+    margin-left: -300%;
+}
+
+
+.qoute h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size:xx-large;
+    font-weight: 100%;
+    font-style: italic;
+    color: #ef3961;
+    margin-left: 11%;
+    margin: 35px 50px ;
+    margin-left: 10%;
+    background: linear-gradient(#336cd4,#618bc6);
+
+}
+.dance{
+    background: linear-gradient(#336cd4,#618bc6);
+}
+.dance h6{
+    font-size:xx-large;
+    font-weight: 200%;
+    font-style: italic;
+    color: #000;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 3px;
+    padding-left: 100px;
+}
+
+.image-text{
+    position:absolute;
+    top:15%;
+    color: #000;
+    padding: 20px;
+}
+
+.image-text h4{
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.dance embed{
+    width: 550px;
+    height: 550px;
+    padding: 50px 50px;
+    margin-top: 50px;
+   
+     
+    
+}
+.dance img{
+    width: 550px;
+    height: 550px;
+    padding: 50px 50px;
+    margin-top: 50px;
+    margin-left: 125px;
+    margin-right: 40px;
+    
+    
+
+}
+.dance h5{
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ef3961;
+    margin-left: 100px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    
+
+}
+
+.dance p{
+    font-size: x-large;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #f9fbff;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 3px;
+    font-weight: 100%;
+    
+}
+
+
+.slider .images .image-text{
+    position: absolute;
+    color: #222;
+    background: rgba(255,255,255,0.3);
+    width: 75%;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow:0 5px 25pxrgba(1 1 1 /5%) ;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+<dir class="logo">
+                <img src="fit7.png" >
+                         
+            </dir>
+            <dir class="logo1">
+                <img src="fit19.png" >
+                         
+            </dir>
+*/
+
+
+
+
+
+
+
+
+.container form .facebook{
+    width: 100%;
+    border-radius: 1px solid black;
+    height: 80%;
+    margin-top: 8%;
+    background: #1e4393;
+    color: white;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:2%;
+}
+.container .twitter{
+    border-radius: 2%;
+    background: #2d699d;
+    color: white;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 80%;
+    width: 100%;
+    margin-top: 10px;
+}
+.container .option{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.input-box{
+    align-items: center;
+    margin-left: 40%;
+    margin-bottom: 30px;
+    justify-content: center;
+    
+}
+.input-box:hover{
+    transition: 0.4s linear ;
+}
+#com{
+    margin-left: 35%;
+    
+
+}
+
+.links{
+    background: linear-gradient(#336cd4,#618bc6);
+
+}
